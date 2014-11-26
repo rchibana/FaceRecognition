@@ -30,7 +30,7 @@ def get_face_set(cam, myStr=""):
     return iset
 
 if __name__ == '__main__':
-    # This file shows you how to train Fisher Face Recognition
+    # This file shows how to train Fisher Face Recognition
     # Enter the names of the faces and the output file.
     cam = Camera(0)
 
