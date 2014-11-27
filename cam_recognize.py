@@ -30,12 +30,12 @@ def get_face_set(cam, myStr=""):
     return iset
 
 if __name__ == '__main__':
-    # This file shows how to train Fisher Face Recognition
-    # Enter the names of the faces and the output file.
+    # Creating the Camera
     cam = Camera(0)
 
     # names of people to recognize
-    names = ['Rodrigo']
+    names = ['Rodrigo', 'Leticia']
+
     # how long to wait between each training session
     waitTime = 10
 
@@ -60,10 +60,6 @@ if __name__ == '__main__':
     t.labels = labels
     t.images = imgs
     f = t.do_the_train()
-
-    # f = FaceRecognizer()
-    # print f.train(imgs, labels)
-    # f.save("test.csv")
 
     # show the results
     disp = Display((640,480))
